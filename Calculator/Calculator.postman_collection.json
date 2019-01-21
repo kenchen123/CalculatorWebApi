@@ -1,0 +1,280 @@
+{
+	"info": {
+		"_postman_id": "3748ceb3-de42-4508-9d38-74e06b4ba526",
+		"name": "Calculator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:55316/api/Calculation?input= 3 3 3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "5 5"
+				},
+				"url": {
+					"raw": "http://localhost:55316/api/Calculation?input= 3 3 3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "55316",
+					"path": [
+						"api",
+						"Calculation"
+					],
+					"query": [
+						{
+							"key": "input",
+							"value": " 3 3 3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:55316/api/Calculation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:55316/api/Calculation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "55316",
+					"path": [
+						"api",
+						"Calculation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:55316/api/Calculation?Key=28085",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:55316/api/Calculation?Key=28085",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "55316",
+					"path": [
+						"api",
+						"Calculation"
+					],
+					"query": [
+						{
+							"key": "Key",
+							"value": "28085"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:55316/api/Calculation?key=de470&input=7 5 5 3 6 9 ",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:55316/api/Calculation?key=de470&input=7 5 5 3 6 9 ",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "55316",
+					"path": [
+						"api",
+						"Calculation"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "de470"
+						},
+						{
+							"key": "input",
+							"value": "7 5 5 3 6 9 "
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:55316/api/CalculatorV2/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:55316/api/CalculatorV2/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "55316",
+					"path": [
+						"api",
+						"CalculatorV2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:55316/api/CalculatorV2/?input=5 4 3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "41442abe-7102-4572-8c7e-4d349a02b128",
+						"exec": [
+							"{",
+							"\"Key\":\"aaaaa\",",
+							"\"NumberList\":[2,2],",
+							"\"Result\":4,",
+							"",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"Key\":\"aaaaa\",\n\"NumberList\":[2,2],\n\"Result\":4\n\n}"
+				},
+				"url": {
+					"raw": "http://localhost:55316/api/CalculatorV2/?input=5 4 3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "55316",
+					"path": [
+						"api",
+						"CalculatorV2",
+						""
+					],
+					"query": [
+						{
+							"key": "input",
+							"value": "5 4 3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:55316/api/CalculatorV2/?key=ee1bf",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:55316/api/CalculatorV2/?key=ee1bf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "55316",
+					"path": [
+						"api",
+						"CalculatorV2",
+						""
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "ee1bf"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:55316/api/CalculatorV2/?key=2a7bc&input=7 8 9",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:55316/api/CalculatorV2/?key=2a7bc&input=7 8 9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "55316",
+					"path": [
+						"api",
+						"CalculatorV2",
+						""
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "2a7bc"
+						},
+						{
+							"key": "input",
+							"value": "7 8 9"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
